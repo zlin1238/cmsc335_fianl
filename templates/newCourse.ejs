@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Application</title>
+    <link rel="stylesheet" href="newCourse.css"/>
+</head>
+
+<body>
+    <h1>New Course</h1>
+    <!-- <form action="/processApplication" method="POST" onsubmit="myFunction()"> -->
+    <form action="/processNewCourse" method="POST"
+        onsubmit="return confirm('Are you sure you want to submit your application? \n You will not be able to change you information once submitted.')">
+        <fieldset>
+            <label><strong>Course: </strong><input type="text" name="name" maxlength="4"> </label>
+            <label><strong>Course Number: </strong><input type="text" name="num" maxlength="3"></label>
+            <br>
+            <br>
+            <label><strong>Credit: </strong><input type="text" name="credit"></label>
+            <label><strong>GPA: </strong><input type="text" name="gpa"></label>
+            <br>
+            <br>
+            <label><strong>Type: </strong></label> <select name="type" id="type">
+                <option value="ULC">Upper Level Concentration</option>
+                <option value="LLR">Lower Level Requirements</option>
+                <option value="ULR">Upper Level Requirements</option>
+                <option value="Electives">CMSC Electives</option>
+                <option value="FS">Fundamental Studies</option>
+                <option value="DS">Distributive Studies</option>
+                <option value="IS">I-Series</option>
+                <option value="Diversity">Diversity</option>
+            </select>
+            <br>
+        </fieldset>
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit Course">
+    </form>
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+</html>

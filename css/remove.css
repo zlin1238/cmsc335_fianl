@@ -1,0 +1,28 @@
+body {
+    border-color: brown;
+    width: 45rem;
+        border-style: double;
+    border-width: 0.5rem;
+    padding: 1rem; 
+    /* margin: 5rem; */
+    margin: 0 auto;
+    background-color:aquamarine;
+}
+
+html {
+    font-size: 18px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    padding-left: 3rem;
+}
+
+form {
+    padding-left: 2rem;
+}
+
+div {
+    padding-left: 2rem;
+
+}
